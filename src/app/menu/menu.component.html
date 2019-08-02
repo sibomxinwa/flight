@@ -1,0 +1,309 @@
+<!--=Navigation=-->	
+<!-- <div id="fh5co-wrapper">
+		<div id="fh5co-page"> -->
+
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="" style="background-image: url()">Travel</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="#Flights">Flights</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+<!--=Main===-->
+
+<body style="background-image:  url('assets/images/photo-585004.jpeg'); background-size: cover;" id="Flights">
+
+    <div id="booking" class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="booking-form">
+                            <div class="form-header">
+                                <h1>The mountains are calling and I must go…</h1>
+                            </div>
+                        
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Full name</span>
+                                            <input class="form-control" [(ngModel)]="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Phone</span>
+                                            <input class="form-control" [(ngModel)]="phone" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">From:</span>
+                                                <select class="form-control" [(ngModel)]="travellingfrom" >
+                                                    <option>Port Elizabeth</option>
+                                                    <option>East London</option>
+                                                    <option>Cape Town</option>
+                                                    <option>Johannesburg</option>
+                                                    <option>Mthatha</option>
+                                                    <option>Durban</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">To:</span>
+                                                <select class="form-control" [(ngModel)]="travellingto" >
+                                                    <option>Port Elizabeth</option>
+                                                    <option>East London</option>
+                                                    <option>Cape Town</option>
+                                                    <option>Johannesburg</option>
+                                                    <option>Durban</option>
+                                                    <option>Mthatha</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <span class="form-label">Depart Date</span>
+                                                    <input class="form-control" type="date" [(ngModel)]="flightdate" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <span class="form-label">Depart Time</span>
+                                                    <input class="form-control" type="time" [(ngModel)]="flighttime" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Class</span>
+                                            <select class="form-control" [(ngModel)]="flightclass" >
+                                                <option>Economy</option>
+                                                <option>Premium</option>
+                                                <option>Business</option>
+                                                <option>First</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Adults</span>
+                                            <select class="form-control" [(ngModel)]="adults">
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Children</span>
+                                            <select class="form-control" [(ngModel)]="children">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button class="submit-btn" (click)="bookingConfirmed()">Book a flight</button>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<!--==End main==-->
+<br>
+<br>
+<br>
+<!--=========Popular destinations===============-->
+<h1 style="text-align: center">Popular destinations</h1>
+<div class="centerflipcards" id="destinations">
+        <div class="square-flip">
+            <div class='square' style="background-image: url(/assets/images/south-africa-cape-town.jpg)">
+                <div class="square-container">
+                    <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                    <h2 class="textshadow">Cape Town - South Africa</h2>
+                    <h3 class="textshadow">Explore the beauty of Cape Town</h3>
+                </div>
+                <div class="flip-overlay"></div>
+            </div>
+            <div class='square2'  style="background-image: url(/assets/images/Table-Mountain-LARGE.jpg)">
+                <div class="square-container2">
+                    <div class="align-center"></div>
+                    <a href="" target="_blank" class="boxshadow kallyas-button">Cape Town</a>
+                </div>
+                <div class="flip-overlay"></div>
+            </div>
+        </div>
+
+        <div class="square-flip">
+                <div class='square' style="background-image: url(/assets/images/Nelson_Mandela_Stadium_in_Port_Elizabeth.jpg)">
+                    <div class="square-container">
+                        <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                        <h2 class="textshadow">Port Elizabeth - South Africa</h2>
+                        <h3 class="textshadow">Explore the beauty of Cape Town</h3>
+                    </div>
+                    <div class="flip-overlay"></div>
+                </div>
+                <div class='square2' style="background-image: url(/assets/images/478157521_full.jpg)">
+                    <div class="square-container2">
+                        <div class="align-center"></div>
+                        <a href="" target="_blank" class="boxshadow kallyas-button">Port Elizabeth</a>
+                    </div>
+                    <div class="flip-overlay"></div>
+                </div>
+        </div>
+
+            <div class="square-flip">
+                    <div class='square' style="background-image: url(/assets/images/Golden-Mile-in-Durban-South-Africa-e1552268947160.jpg)">
+                        <div class="square-container">
+                            <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Durban - South Africa</h2>
+                            <h3 class="textshadow">Explore the beauty of KwaZulu Natal</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class='square2' style="background-image: url(/assets/images/140912110250-durban-7.jpg)">
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <a href="" target="_blank" class="boxshadow kallyas-button">Durban</a>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+
+                <div class="square-flip">
+                        <div class='square' style="background-image: url(/assets/images/leopard-safari-south-africa.jpg)">
+                            <div class="square-container">
+                                <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                                <h2 class="textshadow">MalaMala</h2>
+                                <h3 class="textshadow">MalaMala Game Reserve</h3>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class='square2' style="background-image: url(/assets/images/elephants_1.jpg)">
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <a href="" target="_blank" class="boxshadow kallyas-button">Nature Reserve</a>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="square-flip">
+                            <div class='square' style="background-image: url(/assets/images/johannesburg1.jpg)">
+                                <div class="square-container">
+                                    <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                                    <h2 class="textshadow">Johannesburg - South Africa</h2>
+                                    <h3 class="textshadow">Explore the beauty of Johannesburg</h3>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                            <div class='square2' style="background-image: url(/assets/images/Johannesburg_CBD.jpg)">
+                                <div class="square-container2">
+                                    <div class="align-center"></div>
+                                    <a href="" target="_blank" class="boxshadow kallyas-button">Johannesburg</a>
+                                </div>
+                                <div class="flip-overlay"></div>
+                            </div>
+                        </div>
+
+                        <div class="square-flip">
+                                <div class='square' style="background-image: url(/assets/images/Durban-South-Africa-intro_6143_12333_433-280_Images.jpg)">
+                                    <div class="square-container">
+                                        <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                                        <h2 class="textshadow">Kallyas WordPress Theme</h2>
+                                        <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
+                                    </div>
+                                    <div class="flip-overlay"></div>
+                                </div>
+                                <div class='square2' style="background-image: url(/assets/images/Table-Mountain-LARGE.jpg)">
+                                    <div class="square-container2">
+                                        <div class="align-center"></div>
+                                        <a href="" target="_blank" class="boxshadow kallyas-button">View Details</a>
+                                    </div>
+                                    <div class="flip-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="square-flip">
+                                    <div class='square' style="background-image: url(/assets/images/Durban-South-Africa-intro_6143_12333_433-280_Images.jpg)">
+                                        <div class="square-container">
+                                            <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                                            <h2 class="textshadow">Kallyas WordPress Theme</h2>
+                                            <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
+                                        </div>
+                                        <div class="flip-overlay"></div>
+                                    </div>
+                                    <div class='square2' style="background-image: url(/assets/images/Table-Mountain-LARGE.jpg)">
+                                        <div class="square-container2">
+                                            <div class="align-center"></div>
+                                            <a href="" target="_blank" class="boxshadow kallyas-button">View Details</a>
+                                        </div>
+                                        <div class="flip-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="square-flip">
+                                        <div class='square' style="background-image: url(/assets/images/Durban-South-Africa-intro_6143_12333_433-280_Images.jpg)">
+                                            <div class="square-container">
+                                                <div class="align-center"><img src="" class="boxshadow" alt=""></div>
+                                                <h2 class="textshadow">Kallyas WordPress Theme</h2>
+                                                <h3 class="textshadow">The #1 Selling Most Enjoyable and Creative Multipurpose WordPress theme.</h3>
+                                            </div>
+                                            <div class="flip-overlay"></div>
+                                        </div>
+                                        <div class='square2' style="background-image: url(/assets/images/Table-Mountain-LARGE.jpg)">
+                                            <div class="square-container2">
+                                                <div class="align-center"></div>
+                                                <a href="" target="_blank" class="boxshadow kallyas-button">View Details</a>
+                                            </div>
+                                            <div class="flip-overlay"></div>
+                                        </div>
+                                    </div>
+
+      <br/>
+      <br/>
+      <br/>
+      
+    </div>
+
+   
+
+    <!--====Foter====-->
+
+    
+  
+    
+    
+
+
+
+<router-outlet></router-outlet>
